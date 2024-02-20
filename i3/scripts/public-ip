@@ -1,0 +1,10 @@
+#!/bin/bash
+
+IP=$(curl -s ifconfig.co)
+if [[ ! -z $IP ]]; then
+    
+    case $BLOCK_BUTTON in
+        3) echo "$IP" | xclip;;
+        *) echo "$IP";;
+    esac
+fi

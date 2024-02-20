@@ -1,0 +1,3 @@
+#!/bin/sh
+
+mpv http://somafm.com/sonicuniverse256.pls

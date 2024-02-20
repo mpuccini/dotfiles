@@ -1,0 +1,13 @@
+#!/bin/sh
+
+if pgrep -x "rhythmbox" > /dev/null
+then
+	if [ -z "$(rhythmbox-client --print-playing --print-playing-format='%st')"]; 
+	then
+		rhythmbox-client --print-playing --print-playing-format="%aa - %tt"
+	else
+		rhythmbox-client --print-playing --print-playing-format="%st"
+	fi
+else
+	echo "silence..."
+fi
