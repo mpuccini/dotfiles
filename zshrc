@@ -116,8 +116,6 @@ export PATH=$PATH:/$HOME/.local/bin
 export GOPATH=$HOME/go
 export OS_CLOUD=openstack
 
-# Load Angular CLI autocompletion.
-source <(ng completion script)
 
 
 # >>> conda initialize >>>
@@ -134,4 +132,5 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+eval "$(_SDLCTL_COMPLETE=zsh_source sdlctl)"
 
