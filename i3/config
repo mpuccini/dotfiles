@@ -62,8 +62,8 @@ bindsym XF86AudioMute exec --no-startup-id "pactl set-sink-mute @DEFAULT_SINK@ t
 #bindsym XF86MonBrightnessDown exec "/usr/bin/xbacklight -dec 10%; dunstify 'Brightness down'"
 
 # start a terminal
-bindsym $mod+Return exec xfce4-terminal
-#bindsym $mod+Return exec alacritty
+#bindsym $mod+Return exec xfce4-terminal
+bindsym $mod+Return exec alacritty
 #bindsym $mod+Return exec konsole
 
 # kill focused window
