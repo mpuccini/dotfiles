@@ -132,5 +132,5 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-eval "$(_SDLCTL_COMPLETE=zsh_source sdlctl)"
+#eval "$(_SDLCTL_COMPLETE=zsh_source sdlctl)"
 
